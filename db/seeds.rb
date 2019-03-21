@@ -8,7 +8,7 @@
 #
 #   1
 Pizzeria.destroy_all
- 
+
 Pizzeria.create!([{
   name: "Sottocasa NYC",
   address: "298 Atlantic Ave, Brooklyn, NY 11201",
@@ -21,3 +21,5 @@ Pizzeria.create!([{
   name: "San Matteo NYC",
   address: "1559 2nd Ave, New York, NY 10028"
 }])
+
+Pizza.create!(name: "Pepperoni", description: "Delicious pepp!")
