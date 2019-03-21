@@ -1,0 +1,12 @@
+
+<h2>Tell us about this pizza you had at [PIZZERIA NAME]</h2>
+
+<%= form_for @pizza  do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+  <label>Select Pizzeria: </label>
+  <%= f.collection_select :pizzeria_id, Pizzeria.all, :id, :name %>
+  <%= f.submit %>
+<%end%>
